@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory work 4</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--api key is 41950848958d4781988fa88a37b96003-->
+  </head>
+  <body>
+    <div class="news-sources">
+      <p class="news-sources__item" id="allNews">All news</p>
+    </div>
+    <div class="main">
+      <header class="main-menu">
+  			<h1 class="main-menu__title">News App</h1>
+  		</header>
+      <div class="main__filter">
+        <input class="main__filter-input" id="mainFilterInput" type="text" placeholder="Anything to search.">
+        <button class="main__filter-btn" id="btnMainFilter" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+  		<div class="page-content">
+        <section class="news">
+          <div class="news__item">
+            <img class="news__picture" src="" alt="" />
+            <div class="news__text">
+              <a><h1 class="news__header"></h1></a>
+              <p class="news__content"></p>
+            </div>
+          </div>
+          <p class="news__item_none">
+            There are no articles matching your request.
+          </p>
+        </section>
+        <button class="main__load-more" id="btnMainLoadMore" type="button">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+  		</div>
+  		<footer class="page-footer">
+        <div class="page-footer__item">
+          Powered by <a class="page-footer__link" id="newsapi-link" href="https://newsapi.org/">News API</a>
+        </div>
+  		</footer>
+    </div>
+
+    <script src="scripts/dist/bundle.js"></script>
+  </body>
+</html>
