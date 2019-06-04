@@ -1,0 +1,29 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    no-console: [
+      "error",
+      {
+        allow: ["warn", "error"]
+      }
+    ],
+    new-cap: [
+      "error",
+      {
+        "capIsNew": false
+      }
+    ]
+  }
+}
